@@ -31,9 +31,10 @@ class CartUpdatedListener
     {
         
         // Update the coupon to work on the new Cart Item.
-        $couponName = session('coupon')['name'];
+        if (session()->has('coupon')) {
+            
+            $couponName = session('coupon')['name'];
 
-        if ($couponName) {
             
             $coupon = Coupon::findByCode($couponName);
 

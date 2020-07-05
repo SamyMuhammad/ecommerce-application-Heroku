@@ -20,7 +20,7 @@
 		CSS
 		============================================= -->
 	<link rel="stylesheet" href="{{ asset('css/linearicons.css') }}">
-	<link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="{{ asset('css/themify-icons.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
 	<link rel="stylesheet" href="{{ asset('css/nice-select.css') }}">

@@ -117,9 +117,9 @@ class Cart
 
         $content->put($cartItem->rowId, $cartItem);
         
-        $this->events->dispatch('cart.added', $cartItem);
-
         $this->session->put($this->instance, $content);
+
+        $this->events->dispatch('cart.added', $cartItem);
 
         return $cartItem;
     }
@@ -191,9 +191,9 @@ class Cart
             $content->put($cartItem->rowId, $cartItem);
         }
 
-        $this->events->dispatch('cart.updated', $cartItem);
-
         $this->session->put($this->instance, $content);
+
+        $this->events->dispatch('cart.updated', $cartItem);
 
         return $cartItem;
     }
@@ -212,9 +212,9 @@ class Cart
 
         $content->pull($cartItem->rowId);
 
-        $this->events->dispatch('cart.removed', $cartItem);
-
         $this->session->put($this->instance, $content);
+
+        $this->events->dispatch('cart.removed', $cartItem);
     }
 
     /**
